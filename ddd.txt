@@ -1,0 +1,16 @@
+
+Full feature list
+
+Data Importer/Export - product and reporting items can be imported or exported file  via an Excel spreadsheet 
+Customer Relationship Management (CRM) - maintain customer (drug store) profiles and view full sales history
+Reporting - these include Sales Reports,Purchase Reports Customer Reports,  Supplier Reports, and more
+Categories- categorize your products and run reports based on these categories
+Products (Pharmacy) Management System  - Search products with either brand name or generic name and Integration Online Shopping Cart system
+Promotions - you can discounts items at the till, but you can't set up promotions ahead of time
+Dashboard - there are reports, but no dashboard that shares Top Sales, Top Suppliers, Best Selling Items, Top Customers, etc.
+Auto Purchasing / Ordering - you can run a  ordering direct and pool transaction automatically order merchandise
+Supplier management - management all supplier profile 
+Mobile Support - Responsive web and  suuport any deivice and access  -
+Pyament  gateway integration :  Support refunds, credits and dues Search , Management payment transaction, Payment settlement with suppliers and customers
+Shipping - Manage status of deliveries and Shipping type 
+Online Shopping Cart system - customer or drug store can access and filter products by category or other product property  add to cart and process and check out order transaction  Back end support all order management  and controls by  order status

@@ -1,0 +1,49 @@
+1 Training 
+Due to the tight schedule of 2 important projects; MGeB WAS Plug-in and National E-payment, training session cannot arrange follow the schedule in this semester. However, the information related to these following topics are prepared for next semester training session.
+-	TOPS System
+-	JQuery Plug-ins
+-	Advance Oracle P/L SQL
+-	Docker for Continuous Integration
+-	Advance JAVA Programming
+In addition, the above-mentioned topics are comply using with currently developing projects, such as 
+Bill Payment project is developed using advance oracle P/L SQL for bill service which is provide information to others system 
+FXC Phase 2+3 project using JQuery Plug-ins to design UI for interactive with users while user input search criteria in the screen, JQuery Plug-ins will help in returning search results as a real-time . Moreover, this plug-in can adapt to comply with others project for ease of use.
+MGeB WAS Plug-in project using Advance JAVA Programming as a tool for manage process concurrence to process bulk transaction, moreover in connect with head office.
+Lastly, as studied a possibility of Docker for Continuous Integration for system development, it is very useful, but it is not supported by minimum developer hardware (64 Bit)
+2.  Bill payment & Back Office
+As Bill payment is one of the part of National E-Payment project which has a large scope and it is very new in our branch, some of the structures are complex and hard to handle. So, it is reflect as taking a long time to study related technology and also take times to gathering requirement. The following scopes are develop in this semester;
+Bill Master 
+Biller Profile, nowadays when customer release a bill statement to their customer, their customer can pay only with the bank that signed an agreement with such company. However, since this project aims to support payment in every bank, Biller profile is become one of the most important composition for the scheme. In case of any company who intend to provide bill payment to their customer, such customer has to register for Biller profile to available above-mentioned scheme.
+Firstly, the function related to Biller Profile are as follow
+-	Biller Profile API used for provide biller profile information to CARE team for showing information of biller who is register profile with Mizuho Bank, Bangkok branch to users (supposed to be RED GCMS and RED Call Center) for inquiry.
+-	Biller Profile Loader used for auto synchronize an acknowledgement from ITMX system.
+-	Biller Profile Export to PCC is an scheduler which is provide accumulate file as a daily basis to PCC for support PCC in stand-in mode.
+Bill Data is a bill information provide in the system to support customer come to Mizuho DCD counter or MGeB channel for doing a payment. After DCD counter input or scan bill statement or customer request a payment via MGeB, the system will call a function of bill data for validate bill information with biller profile which is registered by bill’s company. Bill data will check the profile such as overdue payment, channel of payment and etc. if the bill is able to pay or not. 
+Secondly, the function related to Bill data are as follows
+-	Bill Data API used for provide bill payment data to CARE team for showing bill statement information of biller who is register biller profile with Mizuho Bank, Bangkok branch to users (supposed to be RED GCMS and RED Call Center) for inquiry.
+-	Bill Data validation used for validate bill data file which is uploaded by customer to assure that such bill data is correct, and then inform related division for further inform each customer in case of data is incorrect.
+-	Bill Data Loader used for retrieve bill data from MGeB system and store in database for further validation and bill data API.
+-	Bill Data Export to PCC is an scheduler which is provide accumulate file as a daily basis to PCC for support PCC in stand-in mode.
+ITMX Prompt Pay BackOffice (Testing) : doing test case which is sent by ITMX to assure that the system can work properly follow the specification.
+SIT and UAT : support in SIT and UAT of following promptpay product; e-Wallet, Bill Payment. The contents are as follow;
+-	Report Management
+-	Settlement and Reconcile report
+-	Transaction Search 
+-	Disputation and Adjustment
+
+3. FXC Phase 2+3
+
+FX Controls state transaction
+FX Transaction Report
+Summary By as of date
+Summary By Channel (Mgeb,Email,Fax)
+
+
+
+
+4. Mgeb Plugin ; develop a function of Bulk payment transaction that customer uploaded via MGeB system and e-Tax which is connect with Head office, composed of 2 important module as follow;
+- Bulk Checking used for submit the suggestion from bank office if the transactions are available for processing or not. However, Bulk checking is run in every 90 seconds.
+- Bulk Processing used for retrieve transaction to process after Bulk checking returns the information that there are available transaction. Bulk processing will process in 3 parts; XML processing, data validation and e-Tax.
+
+
+

@@ -1,4 +1,75 @@
 
+import java.util.Scanner;
+
+public class Main{
+
+	public static void main(String args[])
+	{
+		System.out.println("Hello World!");
+		
+		Scanner reader = new Scanner(System.in);
+		System.out.println("Enter a number: ");
+		int n = reader.nextInt();
+		System.out.println("The number is "+n);
+	}
+
+}
+
+public interface IQuestion{
+	public string GetQuestion();
+	public Boolean CheckAnswer(string answer);
+	public String GetFormattedAnswer();
+	int GetScore();
+}
+
+public class TrueFaseQuestion implements IQuestion {
+	private string question;
+	private Boolean answer;
+	private int score=1;
+	public TrueFaseQuestion(Boolean answer,string question){
+		 this.question=question;
+	     this.answer=answer;
+	}
+	public string GetQuestion(){
+		return this.question+" (True/False?)";
+	}
+	public Boolean CheckAnswer(string answer){
+	return this.answer.equals(Boolean.valueOf(answer));
+	}
+	
+	public String GetFormmatedAnswer(){
+		return this.answer.toString();
+	}
+	public int GetScore(){
+		return this.score;
+	}
+}
+
+class ShortAnswerQuestion implements IQuestion {
+	private string question;
+	private string answer;
+	private int score=0;
+	public ShortAnswerQuestion(string answer,string question,int score){
+		 this.question=question;
+	     this.answer=answer;
+		 this.score=score;
+	}
+	public string GetQuestion(){
+		return this.question;
+	}
+	public Boolean CheckAnswer(string answer){
+	return (this.answer.equals(answer));
+	}
+	
+	public String GetFormmatedAnswer(){
+		return this.answer.toString();
+	}
+	public int GetScore(){
+		return this.score;
+	}
+}
+
+
 Full feature list
 
 Data Importer/Export - product and reporting items can be imported or exported file  via an Excel spreadsheet 
@@ -13,4 +84,4 @@ Supplier management - management all supplier profile
 Mobile Support - Responsive web and  suuport any deivice and access  -
 Pyament  gateway integration :  Support refunds, credits and dues Search , Management payment transaction, Payment settlement with suppliers and customers
 Shipping - Manage status of deliveries and Shipping type 
-Online Shopping Cart system - customer or drug store can access and filter products by category or other product property  add to cart and process and check out order transaction  Back end support all order management  and controls by  order status
+Online Shopping Cart system - customer or drug store can access and filter products by category or other product property  add to cart and process and check oukt order transaction  Back end support all order management  and controls by  order status

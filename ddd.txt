@@ -1,4 +1,39 @@
 
+KPI
+1. strengthen and rule and regulation
+- Strictly follow the rule in email submission by re-checking an informatiom before sending. Moreover
+- Avoid access unproper website, and access only websites which using SSL
+- Surf and follows technology news related to virus and security in using softwares.
+  
+2. PromptPay  bill payment & RTP 
+- In this semester, Request to pay as known as PayAlert which is behalf of Prompay Bill Payment project is developed. However, I responsed in 3 parts as follow; Firstly, Preparation of Bill Data structure to support RTP. Adding in da validation before insert into database. In addtion, develop bill data loader*** (what for). Secondly, Development of RTP send scheduler to acquire RTP data for submit to PCC web service. Last but not least, process test case in the part of integration between web portal and backoffice with ITMX
+
+3. Mplus Bulk Payment 
+- Develop the part of error handerling
+- Investigate and fix issues that related to user side and also head office side.
+- Preparation setup and installation document for ITA including software specification 
+- Knowledge sharing and being an consultant about bulk paument scheduler for related person to support further process. 
+
+4. Mplus support in Tops interface 
+- Study overall and deep in details about TOPS function, the connection between TOPS and other integrate system, interfacing between internal modules, database, worflow and also scheduler.
+My main responsibilities in this project in this semester can clarify as follow;
+  4.1. Modify database structure to able to support etax processing neccessary data
+and also new payment method.
+  4.2. Modify TOPS client for showing and searchable of etax processing transaction 
+4.3. Modify GCMS M-Type import scheduler to support new payment method and able to connect with MINT module for batch submission to MINT for further invoice processing.
+4.4. Modify Preadvise scheduler by adding condition to check tax invoice information prior the send notify to customer. In addition, adjust preadvice report screen to show etax processing transaction.
+4.5. Develop new import scheduler for loading bulk payment data from MGEB to able to process in TOPS.
+
+All of above-mentioned parts related to etax processing are already implemented and go-live in production environment. 
+
+  In conclusion, this project help me to enhance more knowledge. Some of programming language and backend process are really new to me; such as VB6 that I haven't use before. Moreover, I have a chance to learn and gain more knowledge not only from my team, but also from other person. Such knowledge is very important to used for develop payment scheduler and TOPS which is the heart of payment process.
+ 
+5. Bulk Transaction for Fujitsu group
+- This part is shift to do in the next semester (S1 FY2018)
+
+6. Individual Plan
+
+
 import java.util.Scanner;
 
 public class Main{
